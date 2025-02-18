@@ -1,6 +1,6 @@
 //if/else if/else
 
-let temperatura = +prompt('Inserisci la temperatura');
+let temperatura = +prompt('Qual è la temperatura oggi?');
 
 if(temperatura < 20){
     console.log('Non ci sono più le mezze stagioni'); 
@@ -16,19 +16,19 @@ if(temperatura < 20){
 
 //switch
 
-let temperature = +prompt('Inserisci la temperatura');
+let temperature = +prompt('Qual è la temperatura oggi?');
 let descrizione;
 switch (true) {
-    case temperature <= -10:
+    case temperature < -10:
         descrizione = 'copriti...ancora ti raffreddi'
         break;
-        case temperature <= 0:
+        case temperature < 0:
         descrizione = "non è tanto il freddo quanto l'umidità"
         break;
-        case temperature <= 20:
+        case temperature < 20:
         descrizione = 'Non ci sono più le mezze stagioni'
         break;
-        case temperature <= 30:
+        case temperature < 30:
         descrizione = 'mi dia una Peroni sudata'
         break;
     default:
